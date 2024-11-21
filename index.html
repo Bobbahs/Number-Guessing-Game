@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main Menu -->
+  <div id="menu" class="menu-container">
+    <h1>Welcome to the Number Guessing Game!</h1>
+    <button id="start-btn">Start Game</button>
+    <button id="instructions-btn">Instructions</button>
+    <p>Leaderboard:</p>
+    <p>Best Streak: <span id="best-streak">0</span></p>
+    <p>Best Time: <span id="best-time">0</span></p>
+  </div>
+
+  <!-- Instructions -->
+  <div id="instructions" class="instructions-container">
+    <h1>Instructions</h1>
+    <p>Guess a number between 1 and 100. You have unlimited attempts in normal mode.</p>
+    <button id="back-btn">Back</button>
+  </div>
+
+  <!-- Game -->
+  <div id="game" class="game-container">
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="guess" placeholder="Enter your guess" />
+    <button id="submit">Submit Guess</button>
+    <p id="message"></p>
+    <p>Attempts: <span id="attempts">0</span></p>
+    <button id="reset-btn">Reset Game</button>
+    <button id="back-to-menu-btn">Back to Menu</button>
+    <p id="timer">Time Remaining: <span id="time-remaining">30</span> seconds</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
